@@ -1,0 +1,26 @@
+tupla_diasDelMes=(31,28,31,30,31,30,31,30,31,30,31,30,31)
+print(tupla_diasDelMes)
+print(tupla_diasDelMes[0])
+print(tupla_diasDelMes[3])
+print(tupla_diasDelMes[1])
+tupla_diasDelMes=[['cero',0],['uno',1],['dos',2],['tres',3],['cuatro',4],['x',5]]
+print(tupla_diasDelMes)
+print(tupla_diasDelMes[0])
+print(tupla_diasDelMes[1])
+print(tupla_diasDelMes[2][0])
+print(tupla_diasDelMes[2][1])
+print(tupla_diasDelMes[1][0])
+print(tupla_diasDelMes[1][1])
+print(tupla_diasDelMes[1][2])
+print("valor actual {}".format(lista_diasDelMes[0]))
+lista_diasDelMes[0]=50
+print("valor cambiado {}".format(lista_diasDelMes[0]))
+tupla_diasDelMes[0]=50
+from collections import namedtuple
+planeta=namedtuple('planeta',['nombre','numero'])
+planeta1=planeta('mercurio',1)
+print(planeta1)
+planeta2=planeta('venus',2)
+print(planeta1.nombre, planeta1.numero)
+print(planeta2[0],planeta2[1])
+print('campos de la tupla: {}'.format(planeta1.fields))
